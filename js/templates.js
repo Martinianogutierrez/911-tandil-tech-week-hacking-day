@@ -64,8 +64,5 @@ function dayView(d){
     <span class="chip">Tandil</span>
     <a class="btn mag" href="${d.maps}" target="_blank" rel="noopener">Ver en Google Maps ${arrow}</a></div>
    <div class="map rv">${MAPSVG}</div>
-  </div></section>
-  <section class="sec" data-bg="lilac"><div class="wrap">
-   <div class="split rv"><div><span class="eyebrow">${d.vEy}</span><h2 class="big" style="margin-top:16px">${d.vTitle}</h2></div><p class="lead">${d.vText}</p></div>
-   <div class="voices v3">${voices(3)}</div></div></section>`;
+  </div></section>`;
 }

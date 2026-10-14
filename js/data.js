@@ -8,14 +8,12 @@ const DAYS={
   venue:'Campus Universitario UNICEN',short:'UNICEN · Campus',addr:'Paraje Arroyo Seco s/n, B7000 Tandil, Buenos Aires, Argentina',
   maps:'https://www.google.com/maps/search/?api=1&query=UNICEN%20-%20Campus%20Universitario&query_place_id=ChIJXTwhmjjgkJURMlmVPKCu-c8',
   other:'startup',otherLabel:'Startup Day · 15 Octubre',
-  vEy:'Mentores',vTitle:'Próximamente mentores',vText:'Estamos armando el equipo de mentores que va a acompañar a los equipos durante la jornada de ciberseguridad.',
   vis:'term'},
  startup:{key:'startup',slug:'startup-day',date:'15',track:'Track 02 · Startups',name:'Startup Day',color:'#FF6F59',bg:'coral',
   desc:'Vení a conocer a los que hacen. Charlas dinámicas y networking entre fundadores, venture capital y estudiantes.',
   venue:'Distrito Avellaneda',short:'Distrito Avellaneda',addr:'Av. Avellaneda 1140, B7000 Tandil, Buenos Aires, Argentina',
   maps:'https://www.google.com/maps/search/?api=1&query=Distrito%20Avellaneda&query_place_id=ChIJd4DI7SQfkZURHTIIjbDa3TE',
   other:'hacking',otherLabel:'Hacking Day · 14 Octubre',
-  vEy:'Speakers',vTitle:'Próximamente speakers',vText:'Estamos curando una agenda de referentes que van a compartir aprendizajes reales de producto, ciencia y capital.',
   vis:'growth'}
 };
 const ORG=[
