@@ -128,7 +128,7 @@ ul{margin:0;padding:0;list-style:none}
 .hl{background:var(--coral);color:var(--cream);padding:0 .14em;border-radius:.2em;rotate:-2.2deg;letter-spacing:-.025em}
 .u{position:relative;display:inline-block}
 .sq{position:absolute;left:.04em;bottom:-.02em;width:calc(100% - .08em);height:.16em;overflow:visible}
-.sq path{stroke-width:7px;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.3s 1.2s var(--ease) forwards}
+.sq path{stroke-width:7px;vector-effect:non-scaling-stroke;stroke-dasharray:1 1.5;stroke-dashoffset:1.05;animation:draw 1.3s 1.2s var(--ease) forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(20px,4vw,60px);align-items:end;margin-top:clamp(14px,2vw,28px)}
 .date{display:flex;align-items:baseline;font-size:clamp(3rem,7vw,6.5rem);line-height:.9;font-weight:800;letter-spacing:-.06em;font-stretch:75%}
