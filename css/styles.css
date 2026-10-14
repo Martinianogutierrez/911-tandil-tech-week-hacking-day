@@ -88,8 +88,8 @@ ul{margin:0;padding:0;list-style:none}
 .nav{pointer-events:auto;max-width:1240px;margin:0 auto;display:flex;gap:10px;align-items:stretch;justify-content:center}
 .pill{background:#fff;color:var(--ink);border-radius:18px;padding:9px 10px 9px 16px;display:flex;align-items:center;gap:clamp(14px,2.4vw,34px);box-shadow:0 8px 30px rgba(0,0,0,.08);min-width:0}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:-.03em;font-size:1.15rem;white-space:nowrap}
-.brand svg{width:34px;height:34px;flex:none;transition:transform .6s var(--ease)}
-.brand:hover svg{transform:rotate(-20deg) scale(1.1)}
+.brand img,.brand svg{width:34px;height:34px;flex:none;border-radius:50%;transition:transform .6s var(--ease)}
+.brand:hover img,.brand:hover svg{transform:rotate(-20deg) scale(1.1)}
 .brand small{font-family:var(--mono);font-weight:400;font-size:.7rem;margin-left:.4em;opacity:.6;letter-spacing:.04em}
 .links{display:flex;gap:clamp(12px,2vw,28px);margin-left:auto}
 .links a{text-decoration:none;font-weight:500;position:relative;padding:4px 0;white-space:nowrap}
@@ -253,7 +253,7 @@ ul{margin:0;padding:0;list-style:none}
 .tile.is-open .t-more,.tile:focus-visible .t-more,.tile:has(a:focus-visible) .t-more{transform:none}
 @media(hover:hover){.tile:hover .t-more{transform:none}}
 .t-mark{display:grid;place-items:center;flex:1;position:relative}
-.t-mark svg{width:58%;animation:wobr 5s ease-in-out infinite alternate}
+.t-mark img,.t-mark svg{width:58%;height:auto;display:block;animation:wobr 5s ease-in-out infinite alternate}
 .t-mark .t-tag{position:absolute;left:18px;top:16px}
 @keyframes wobr{from{rotate:-10deg;scale:.94}to{rotate:10deg;scale:1.06}}
 /* motif animations */

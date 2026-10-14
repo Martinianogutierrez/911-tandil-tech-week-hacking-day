@@ -15,4 +15,4 @@ const MOTIF={
  shield:()=>`<svg viewBox="0 0 200 200" aria-hidden="true"><path d="M100 14 L172 42 V100 C172 142 140 170 100 186 C60 170 28 142 28 100 V42Z" fill="currentColor"/><path class="m-chk" pathLength="1" d="M66 100 l26 26 l44 -50" fill="none" stroke="#FFE3D6" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" style="stroke:var(--tb)"/></svg>`,
  swap:()=>`<svg viewBox="0 0 200 200" aria-hidden="true"><g class="m-spin" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round"><path d="M40 100 A60 60 0 0 1 146 60"/><path d="M160 100 A60 60 0 0 1 54 140"/><path d="M148 30 L152 66 L116 64" stroke-linejoin="round"/><path d="M52 170 L48 134 L84 136" stroke-linejoin="round"/></g></svg>`
 };
-const MARK=(c)=>`<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 34 Q16 14 24 28 Q32 12 42 34" stroke="${c}" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="13.5" r="3.2" fill="${c}"/></svg>`;
+const MARK=()=>`<img src="images/favicon.ico" alt="" aria-hidden="true">`;

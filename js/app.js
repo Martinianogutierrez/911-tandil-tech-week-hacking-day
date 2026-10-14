@@ -4,7 +4,7 @@
 /* ---------- mount ---------- */
 $('#dayStack').innerHTML=dayCard(DAYS.hacking,0)+dayCard(DAYS.startup,1);
 $('#voicesHome').innerHTML=voices(4);
-const markTile=`<div class="tile t-m rv" style="--tb:#1000FF;--tf:#F6F1E4;--i:2"><div class="t-mark"><span class="t-tag">2026</span>${MARK('#F6F1E4')}</div></div>`;
+const markTile=`<div class="tile t-m rv" style="--tb:#1000FF;--tf:#F6F1E4;--i:2"><div class="t-mark"><span class="t-tag">2026</span><img src="images/favicon.ico" alt="" aria-hidden="true"></div></div>`;
 $('#bento').innerHTML=ORG.slice(0,2).map((o,i)=>tile(o,i)).join('')+markTile+ORG.slice(2).map((o,i)=>tile(o,i+3)).join('');
 $('#spons').innerHTML=SPON.map((o,i)=>tile(o,i)).join('');
 $('#view-hacking').innerHTML=dayView(DAYS.hacking);
