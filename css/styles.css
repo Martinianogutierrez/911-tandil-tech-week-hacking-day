@@ -89,7 +89,7 @@ ul{margin:0;padding:0;list-style:none}
 .pill{background:#fff;color:var(--ink);border-radius:18px;padding:9px 10px 9px 16px;display:flex;align-items:center;gap:clamp(14px,2.4vw,34px);box-shadow:0 8px 30px rgba(0,0,0,.08);min-width:0}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:-.03em;font-size:1.15rem;white-space:nowrap}
 .brand img,.brand svg{width:34px;height:34px;flex:none;border-radius:50%;transition:transform .6s var(--ease)}
-.brand:hover img,.brand:hover svg{transform:rotate(-20deg) scale(1.1)}
+.brand:hover img,.brand:hover svg{transform:scale(1.1)}
 .brand small{font-family:var(--mono);font-weight:400;font-size:.7rem;margin-left:.4em;opacity:.6;letter-spacing:.04em}
 .links{display:flex;gap:clamp(12px,2vw,28px);margin-left:auto}
 .links a{text-decoration:none;font-weight:500;position:relative;padding:4px 0;white-space:nowrap}
