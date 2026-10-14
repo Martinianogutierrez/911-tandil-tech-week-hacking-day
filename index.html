@@ -830,7 +830,7 @@ $$('.tile').forEach(t=>{
 /* ---------- magnetic buttons + cursor ---------- */
 if(fine&&!reduce){
  $$('.mag').forEach(el=>{
-  el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.translate=`${((e.clientX-r.left-r.width/2)*.2).toFixed(1)}px ${((e.clientY-r.top-r.height/2)*.28).toFixed(1)}px`});
+  el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();el.style.translate=`${((e.clientX-r.left-r.width/2)*.08).toFixed(1)}px ${((e.clientY-r.top-r.height/2)*.06).toFixed(1)}px`});
   el.addEventListener('pointerleave',()=>{el.style.translate=''});
  });
  const cur=$('#cur');let x=0,y=0,tx=0,ty=0;
