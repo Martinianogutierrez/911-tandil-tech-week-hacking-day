@@ -100,10 +100,6 @@ ul{margin:0;padding:0;list-style:none}
 .menu-btn span{display:block;width:18px;height:2.5px;background:var(--ink);border-radius:2px;transition:transform .4s var(--ease)}
 .menu-btn[aria-expanded="true"] span:first-child{transform:translateY(4.25px) rotate(45deg)}
 .menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-4.25px) rotate(-45deg)}
-.cta{background:#fff;color:var(--ink);border-radius:18px;padding:0 10px 0 20px;display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;box-shadow:0 8px 30px rgba(0,0,0,.08);white-space:nowrap;transition:translate .25s ease-out}
-.cta svg{width:38px;height:38px}
-.blink{transform-box:fill-box;transform-origin:center;animation:blink 3.6s infinite}
-@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
 .menu{position:fixed;inset:0;z-index:90;background:var(--green);color:var(--ink);clip-path:circle(0 at calc(100% - 60px) 44px);transition:clip-path .8s cubic-bezier(.65,0,.35,1);visibility:hidden;overflow:auto;display:flex;align-items:center}
 .menu.open{clip-path:circle(160% at calc(100% - 60px) 44px);visibility:visible}
 .menu .wrap{padding-block:110px 50px}
@@ -274,21 +270,6 @@ ul{margin:0;padding:0;list-style:none}
 @keyframes grow{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
 .m-chk{stroke-dasharray:1;stroke-dashoffset:1;animation:draw calc(2.6s*var(--spd,1)) ease-in-out infinite alternate}
 
-/* ---------- signup ---------- */
-.signup .lead{margin-top:20px}
-.signup .note{margin-top:14px;font-family:var(--mono);font-size:.82rem;letter-spacing:.04em;opacity:.8}
-.cd-wrap{margin-top:clamp(28px,4vw,52px)}
-.cd-label{font-family:var(--mono);font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-.cd{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:760px}
-.cdt{background:var(--ink);color:var(--cream);border-radius:24px;padding:clamp(14px,2.4vw,26px) clamp(10px,2vw,22px);display:flex;flex-direction:column;gap:4px;min-width:0}
-.cdt b{font-size:clamp(2.4rem,8vw,5.6rem);line-height:.9;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums;font-stretch:78%;display:inline-block}
-.cdt b.flip{animation:flip .5s var(--ease)}
-@keyframes flip{from{transform:translateY(40%) rotateX(70deg);opacity:.2}to{transform:none;opacity:1}}
-.cdt span{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
-.signup .btns{margin-top:clamp(24px,3.5vw,40px)}
-.follow{margin-top:clamp(28px,4vw,48px);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.follow>span{font-weight:600;margin-right:6px}
-
 /* ---------- footer ---------- */
 .foot{padding-block:clamp(64px,9vw,120px) 40px;overflow:hidden}
 .wordmark{font-size:clamp(3rem,13.4vw,13.5rem);line-height:.86;font-weight:800;letter-spacing:-.065em;font-stretch:75%;color:var(--green);cursor:default;text-wrap:balance}
@@ -347,7 +328,6 @@ ul{margin:0;padding:0;list-style:none}
 }
 @media(max-width:640px){
   body{font-size:1rem}
-  .cta{display:none}
   .minis{grid-template-columns:1fr}
   .bento{grid-template-columns:minmax(0,1fr)}
   .bento .t-a,.bento .t-e{grid-column:auto}
@@ -356,7 +336,6 @@ ul{margin:0;padding:0;list-style:none}
   .voice{aspect-ratio:4/3.4}
   .voice:nth-child(even){margin-top:0}
   .t-name{padding-right:38%}
-  .cd{grid-template-columns:repeat(2,minmax(0,1fr))}
   .brand small{display:none}
 }
 @media(prefers-reduced-motion:reduce){

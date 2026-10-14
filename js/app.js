@@ -7,14 +7,13 @@ $('#voicesHome').innerHTML=voices(4);
 const markTile=`<div class="tile t-m rv" style="--tb:#1000FF;--tf:#F6F1E4;--i:2"><div class="t-mark"><span class="t-tag">2026</span>${MARK('#F6F1E4')}</div></div>`;
 $('#bento').innerHTML=ORG.slice(0,2).map((o,i)=>tile(o,i)).join('')+markTile+ORG.slice(2).map((o,i)=>tile(o,i+3)).join('');
 $('#spons').innerHTML=SPON.map((o,i)=>tile(o,i)).join('');
-$('#signupHome').innerHTML=signup('home');
 $('#view-hacking').innerHTML=dayView(DAYS.hacking);
 $('#view-startup').innerHTML=dayView(DAYS.startup);
 const band=(el)=>{const t=MARQ.map(x=>`<span>${x}</span><span>✦</span>`).join('');el.innerHTML=`<div class="track">${t}</div><div class="track">${t}</div>`};
 band($('#band1'));band($('#band2'));
 $$('[data-split]').forEach(el=>{const t=el.textContent;el.textContent='';[...t].forEach(c=>{const s=document.createElement('span');s.textContent=c===' '?' ':c;s.setAttribute('aria-hidden','true');el.appendChild(s)})});
 
-/* ---------- status + countdown ---------- */
+/* ---------- status ---------- */
 function statusText(){
  const a=new Date(Date.now()-3*3600e3), day=Date.UTC(a.getUTCFullYear(),a.getUTCMonth(),a.getUTCDate());
  const d1=Date.UTC(2026,9,14), d2=Date.UTC(2026,9,15);
@@ -24,13 +23,6 @@ function statusText(){
  return '14 & 15 OCT. 2026 · Tandil';
 }
 $('#status').textContent=statusText();
-function tick(){
- let diff=REG-Date.now();const after=diff<0;diff=Math.abs(diff);
- const v={d:Math.floor(diff/864e5),h:Math.floor(diff%864e5/36e5),m:Math.floor(diff%36e5/6e4),s:Math.floor(diff%6e4/1e3)};
- $$('[data-cdlabel]').forEach(el=>{el.textContent=after?'Abrieron hace':'Faltan'});
- $$('[data-u]').forEach(b=>{const t=String(v[b.dataset.u]).padStart(2,'0');if(b.textContent!==t){b.textContent=t;b.classList.remove('flip');void b.offsetWidth;b.classList.add('flip')}});
-}
-tick();setInterval(tick,1000);
 
 /* ---------- reveal ---------- */
 $$('.stagger').forEach(p=>[...p.children].forEach((c,i)=>c.style.setProperty('--i',i)));
@@ -63,7 +55,6 @@ const SLUG={home:'',hacking:'hacking-day',startup:'startup-day'};
 function swap(v){current=v;for(const k in VIEWS)VIEWS[k].hidden=k!==v;lastBg='';try{history.replaceState(null,'',SLUG[v]?'#'+SLUG[v]:location.pathname+location.search)}catch(e){}}
 function toTarget(to,instant){
  const b=instant?'instant':'smooth';
- if(to==='signup'){const el=$('.view:not([hidden]) .signup');if(el){el.scrollIntoView({behavior:b,block:'start'});return}}
  const el=to&&document.getElementById(to);
  if(el)el.scrollIntoView({behavior:b,block:'start'});else scrollTo({top:0,behavior:b});
 }
@@ -80,11 +71,11 @@ function setMenu(o){menu.classList.toggle('open',o);mb.setAttribute('aria-expand
 mb.addEventListener('click',()=>setMenu(!menu.classList.contains('open')));
 addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
 document.addEventListener('click',e=>{
- const a=e.target.closest('[data-go],[data-scroll]');
+ const a=e.target.closest('[data-go]');
  if(!a)return;
  e.preventDefault();
  const wasMenu=menu.classList.contains('open');setMenu(false);
- const run=()=>{if(a.dataset.go)go(a.dataset.go,a.dataset.to);else toTarget(a.dataset.scroll)};
+ const run=()=>go(a.dataset.go,a.dataset.to);
  wasMenu?setTimeout(run,350):run();
 });
 
