@@ -109,15 +109,16 @@ ul{margin:0;padding:0;list-style:none}
 .hero h1,.dh-title{font-weight:800;font-stretch:76%;letter-spacing:-.055em}
 .hero h1{font-size:clamp(3rem,10.6vw,9.8rem);line-height:.9;text-wrap:balance}
 .hero h1 .line{display:block}
+.hero-subtitle{margin-top:clamp(10px,1.5vw,20px);font-size:clamp(1.35rem,3vw,2.6rem);line-height:1.1;letter-spacing:-.035em;font-weight:600;text-wrap:balance}
 .w{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .04em .14em;margin-bottom:-.14em}
 .w>span{display:inline-block;animation:rise 1.05s var(--ease) both;animation-delay:calc(.15s + var(--i,0)*.09s)}
 @keyframes rise{from{transform:translateY(112%) rotate(5deg)}to{transform:none}}
-.hl{background:var(--coral);color:var(--cream);padding:0 .14em;border-radius:.2em;rotate:-2.2deg}
+.hl{background:var(--coral);color:var(--cream);padding:0 .14em;border-radius:.2em;rotate:-2.2deg;letter-spacing:-.025em}
 .u{position:relative;display:inline-block}
-.sq{position:absolute;left:0;bottom:-.02em;width:100%;height:.16em;overflow:visible}
+.sq{position:absolute;left:.04em;bottom:-.02em;width:calc(100% - .08em);height:.16em;overflow:visible}
 .sq path{stroke-width:7px;vector-effect:non-scaling-stroke;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.3s 1.2s var(--ease) forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(20px,4vw,60px);align-items:end;margin-top:clamp(24px,4vw,52px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(20px,4vw,60px);align-items:end;margin-top:clamp(16px,2.5vw,32px)}
 .date{display:flex;align-items:baseline;font-size:clamp(3.4rem,9vw,8rem);line-height:.9;font-weight:800;letter-spacing:-.06em;font-stretch:75%}
 .date b{color:var(--coral);font-weight:800;margin-inline:.02em}
 .date i{font-style:normal;margin-left:.2em;font-size:.55em;letter-spacing:-.03em}
@@ -407,11 +408,10 @@ ul{margin:0;padding:0;list-style:none}
         <span class="eyebrow">2026 · Tandil Tech Week</span>
         <span class="status"><i></i><span id="status">14 & 15 OCT.</span></span>
       </div>
-      <h1 aria-label="Un encuentro para construir lo que viene.">
-        <span class="line" aria-hidden="true"><span class="w"><span style="--i:0">Un</span></span> <span class="w"><span style="--i:1">encuentro</span></span></span>
-        <span class="line" aria-hidden="true"><span class="w"><span style="--i:2">para</span></span> <span class="w"><span class="hl" style="--i:3">construir</span></span></span>
-        <span class="line" aria-hidden="true"><span class="u"><span class="w"><span style="--i:4">lo que viene.</span></span><svg class="sq" viewBox="0 0 400 24" preserveAspectRatio="none"><path pathLength="1" d="M4 16 Q30 2 56 14 T108 14 T160 14 T212 14 T264 14 T316 14 T368 14 T396 12" fill="none" stroke="#232323" stroke-linecap="round"/></svg></span></span>
+      <h1 aria-label="Tandil Tech Week">
+        <span class="line"><span class="w"><span class="hl" style="--i:0">Tandil</span></span> <span class="u"><span class="w"><span style="--i:1">Tech</span></span> <span class="w"><span style="--i:2">Week</span></span><svg class="sq" viewBox="0 0 400 24" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M4 16 Q30 2 56 14 T108 14 T160 14 T212 14 T264 14 T316 14 T368 14 T396 12" fill="none" stroke="#232323" stroke-linecap="round"/></svg></span></span>
       </h1>
+      <p class="hero-subtitle">Un encuentro para construir lo que viene.</p>
 
       <div class="hero-grid">
         <div>
