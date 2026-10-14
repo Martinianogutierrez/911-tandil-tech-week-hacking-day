@@ -279,7 +279,7 @@ ul{margin:0;padding:0;list-style:none}
 
 /* ---------- footer ---------- */
 .foot{padding-block:clamp(64px,9vw,120px) 40px;overflow:hidden}
-.wordmark{font-size:clamp(3rem,13.4vw,13.5rem);line-height:.86;font-weight:800;letter-spacing:-.065em;font-stretch:75%;color:var(--green);cursor:default;text-wrap:balance}
+.wordmark{font-size:clamp(3rem,13.4vw,13.5rem);line-height:.86;font-weight:800;letter-spacing:-.015em;font-stretch:75%;color:var(--green);cursor:default;text-wrap:balance}
 .wordmark span{display:inline-block;transition:transform .4s var(--ease),color .3s}
 .wordmark span:hover{transform:translateY(-.1em) rotate(-6deg)}
 .wordmark span:nth-child(5n+1):hover{color:var(--coral)}
