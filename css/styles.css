@@ -151,7 +151,7 @@ ul{margin:0;padding:0;list-style:none}
 .hero-links .arrowlink{font-family:var(--display);font-size:1.1rem;font-weight:700;text-decoration:none;border-bottom:2.5px solid currentColor}
 .scene{position:relative;width:100%;max-width:min(520px,52vh);max-width:min(520px,52svh);margin-left:auto;aspect-ratio:560/470}
 .scene>svg{width:100%;height:100%;overflow:visible;display:block}
-.sticker{position:absolute;right:0;top:-10%;width:clamp(96px,13.5vw,160px);aspect-ratio:1;z-index:2}
+.sticker{position:absolute;right:0;top:-50%;width:clamp(96px,13.5vw,160px);aspect-ratio:1;z-index:2}
 .sticker svg{width:100%;height:100%;animation:spin 16s linear infinite}
 .sticker b{position:absolute;inset:0;display:grid;place-items:center;font-size:1.8rem;font-weight:800}
 @keyframes spin{to{transform:rotate(360deg)}}
