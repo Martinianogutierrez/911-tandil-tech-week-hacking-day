@@ -7,16 +7,16 @@ const DAYS={
   desc:'Jornada de hacking en equipos. Juntá a tus amigos y vení a divertirte aprendiendo de ciberseguridad.',
   venue:'Campus Universitario UNICEN',short:'UNICEN · Campus',addr:'Paraje Arroyo Seco s/n, B7000 Tandil, Buenos Aires, Argentina',
   maps:'https://www.google.com/maps/search/?api=1&query=UNICEN%20-%20Campus%20Universitario&query_place_id=ChIJXTwhmjjgkJURMlmVPKCu-c8',
-  luma:'https://luma.com/8dy1oypg',other:'startup',otherLabel:'Startup Day · 15 Octubre',
+  other:'startup',otherLabel:'Startup Day · 15 Octubre',
   vEy:'Mentores',vTitle:'Próximamente mentores',vText:'Estamos armando el equipo de mentores que va a acompañar a los equipos durante la jornada de ciberseguridad.',
-  signup:'abren las inscripciones al Hacking Day. La inscripción es gratuita y sujeta a aprobación.',vis:'term'},
+  vis:'term'},
  startup:{key:'startup',slug:'startup-day',date:'15',track:'Track 02 · Startups',name:'Startup Day',color:'#FF6F59',bg:'coral',
   desc:'Vení a conocer a los que hacen. Charlas dinámicas y networking entre fundadores, venture capital y estudiantes.',
   venue:'Distrito Avellaneda',short:'Distrito Avellaneda',addr:'Av. Avellaneda 1140, B7000 Tandil, Buenos Aires, Argentina',
   maps:'https://www.google.com/maps/search/?api=1&query=Distrito%20Avellaneda&query_place_id=ChIJd4DI7SQfkZURHTIIjbDa3TE',
-  luma:'https://luma.com/esg42kt8',other:'hacking',otherLabel:'Hacking Day · 14 Octubre',
+  other:'hacking',otherLabel:'Hacking Day · 14 Octubre',
   vEy:'Speakers',vTitle:'Próximamente speakers',vText:'Estamos curando una agenda de referentes que van a compartir aprendizajes reales de producto, ciencia y capital.',
-  signup:'abren las inscripciones al Startup Day. La inscripción es gratuita y sujeta a aprobación.',vis:'growth'}
+  vis:'growth'}
 };
 const ORG=[
  {k:'heat',cls:'t-a',tag:'VC Fund',name:'Picante',dom:'picante.fund',url:'https://picante.fund',chip:'Venture Capital',bg:'#FF5A1F',fg:'#4B0F1E',

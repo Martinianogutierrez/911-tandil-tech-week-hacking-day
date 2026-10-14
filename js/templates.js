@@ -1,4 +1,4 @@
-/* HTML builders for cards, views, signup, etc. */
+/* HTML builders for cards, views, etc. */
 'use strict';
 
 /* ---------- templates ---------- */
@@ -47,22 +47,6 @@ const MAPSVG=`<svg viewBox="0 0 520 416" aria-hidden="true">
  <g transform="translate(232 170)"><ellipse class="rip" cx="0" cy="0" rx="24" ry="9" fill="#232323" opacity=".3"/>
  <g class="pin"><path d="M0 -3 C-26 -42 -34 -62 -34 -78 A34 34 0 1 1 34 -78 C34 -62 26 -42 0 -3Z" transform="translate(0 0)" fill="#232323"/><circle cx="0" cy="-78" r="13" fill="#F7E11F"/></g></g></svg>`;
 
-function signup(kind){
- const text=kind==='home'?`El 17 de septiembre a las 19:00 ${V('abren','abrieron')} las inscripciones al Hacking Day y al Startup Day. Podés sumarte a una jornada o a las dos.`:`El 17 de septiembre a las 19:00 ${V(DAYS[kind].signup.split(' ')[0],'abrieron')} ${DAYS[kind].signup.split(' ').slice(1).join(' ')}`;
- const btns=kind==='home'?`<a class="btn ink mag" href="${DAYS.hacking.luma}" target="_blank" rel="noopener">Hacking Day en Luma ${arrow}</a><a class="btn white mag" href="${DAYS.startup.luma}" target="_blank" rel="noopener">Startup Day en Luma ${arrow}</a>`:`<a class="btn ink mag" href="${DAYS[kind].luma}" target="_blank" rel="noopener">Abrir en Luma ${arrow}</a>`;
- return `<section class="sec signup" data-bg="sun"><div class="wrap">
-  <div class="rv"><span class="eyebrow">Inscripciones 2026</span>
-  <h2 class="big" style="margin-top:16px">Construyamos juntos lo que viene.</h2>
-  <p class="lead">${text}</p>
-  <p class="note">Las inscripciones ${V('abren','abrieron')} el 17 de septiembre de 2026 a las 19:00 (GMT-3).</p></div>
-  <div class="cd-wrap rv"><div class="cd-label" data-cdlabel>Faltan</div>
-   <div class="cd">${[['d','Días'],['h','Horas'],['m','Min'],['s','Seg']].map(([u,l])=>`<div class="cdt"><b data-u="${u}">––</b><span>${l}</span></div>`).join('')}</div></div>
-  <div class="btns rv">${btns}</div>
-  <div class="follow rv"><span>Mientras tanto, seguinos</span>
-   <a class="pillink" href="${IG}" target="_blank" rel="noopener">Instagram @tandiltechweek ↗</a>
-   <a class="pillink" href="${XX}" target="_blank" rel="noopener">X @tandiltechweek ↗</a></div>
- </div></section>`;
-}
 function dayView(d){
  return `<section class="dhero" data-bg="${d.bg}">
   <div class="ghost" data-p="-.1" aria-hidden="true">${d.date}</div>
@@ -71,8 +55,7 @@ function dayView(d){
    <h1 class="dh-title" aria-label="${d.name}">${words(d.name)}</h1>
    <div class="dh-row">
     <div><p class="lead">${d.desc}</p>
-     <div class="btns"><a class="btn ink mag" href="#inscribirme" data-scroll="signup">Inscribirme ${arrow}</a>
-      <a class="btn white mag" href="#${DAYS[d.other].slug}" data-go="${d.other}">${d.otherLabel} ${arrow}</a></div></div>
+     <div class="btns"><a class="btn white mag" href="#${DAYS[d.other].slug}" data-go="${d.other}">${d.otherLabel} ${arrow}</a></div></div>
     <div class="dh-vis rv">${visOf(d)}</div>
    </div>
   </div></section>
@@ -84,6 +67,5 @@ function dayView(d){
   </div></section>
   <section class="sec" data-bg="lilac"><div class="wrap">
    <div class="split rv"><div><span class="eyebrow">${d.vEy}</span><h2 class="big" style="margin-top:16px">${d.vTitle}</h2></div><p class="lead">${d.vText}</p></div>
-   <div class="voices v3">${voices(3)}</div></div></section>
-  ${signup(d.key)}`;
+   <div class="voices v3">${voices(3)}</div></div></section>`;
 }
