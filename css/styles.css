@@ -64,6 +64,7 @@ ul{margin:0;padding:0;list-style:none}
 .btn:hover .ar{transform:rotate(-45deg) scale(1.1)}
 .btn.ink{background:var(--ink);color:var(--cream)}
 .btn.ink .ar{background:var(--cream)}
+.btn.blue{background:var(--blue)}
 .btn.white{background:#fff}
 .btn.white .ar{background:var(--ink);color:#fff}
 .chip{font-family:var(--mono);font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;padding:.55em 1.05em;border-radius:99px;background:var(--ink);color:var(--cream);display:inline-block}
