@@ -14,6 +14,7 @@ const DAYS={
   desc:'Vení a conocer a los que hacen. Charlas dinámicas y networking entre fundadores, venture capital y estudiantes.',
   venue:'Distrito Avellaneda',short:'Distrito Avellaneda',addr:'Av. Avellaneda 1140, B7000 Tandil, Buenos Aires, Argentina',
   maps:'https://www.google.com/maps/search/?api=1&query=Distrito%20Avellaneda&query_place_id=ChIJd4DI7SQfkZURHTIIjbDa3TE',
+  signup:'https://luma.com/esg42kt8?lm_source=embed',
   other:'hacking',otherLabel:'Hacking Day · 14 Octubre',
   vis:'growth'}
 };
