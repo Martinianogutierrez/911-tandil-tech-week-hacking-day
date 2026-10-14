@@ -101,6 +101,10 @@ ul{margin:0;padding:0;list-style:none}
 .menu-btn[aria-expanded="true"] span:first-child{transform:translateY(4.25px) rotate(45deg)}
 .menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-4.25px) rotate(-45deg)}
 @media(min-width:1001px){.menu-btn{display:none}}
+.cta{background:#fff;color:var(--ink);border-radius:18px;padding:0 10px 0 20px;display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600;box-shadow:0 8px 30px rgba(0,0,0,.08);white-space:nowrap;transition:translate .25s ease-out}
+.cta svg{width:38px;height:38px}
+.blink{transform-box:fill-box;transform-origin:center;animation:blink 3.6s infinite}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
 .menu{position:fixed;inset:0;z-index:90;background:var(--green);color:var(--ink);clip-path:circle(0 at calc(100% - 60px) 44px);transition:clip-path .8s cubic-bezier(.65,0,.35,1);visibility:hidden;overflow:auto;display:flex;align-items:center}
 .menu.open{clip-path:circle(160% at calc(100% - 60px) 44px);visibility:visible}
 .menu .wrap{padding-block:110px 50px}
