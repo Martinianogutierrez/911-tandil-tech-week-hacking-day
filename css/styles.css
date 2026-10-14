@@ -100,6 +100,7 @@ ul{margin:0;padding:0;list-style:none}
 .menu-btn span{display:block;width:18px;height:2.5px;background:var(--ink);border-radius:2px;transition:transform .4s var(--ease)}
 .menu-btn[aria-expanded="true"] span:first-child{transform:translateY(4.25px) rotate(45deg)}
 .menu-btn[aria-expanded="true"] span:last-child{transform:translateY(-4.25px) rotate(-45deg)}
+@media(min-width:1001px){.menu-btn{display:none}}
 .menu{position:fixed;inset:0;z-index:90;background:var(--green);color:var(--ink);clip-path:circle(0 at calc(100% - 60px) 44px);transition:clip-path .8s cubic-bezier(.65,0,.35,1);visibility:hidden;overflow:auto;display:flex;align-items:center}
 .menu.open{clip-path:circle(160% at calc(100% - 60px) 44px);visibility:visible}
 .menu .wrap{padding-block:110px 50px}
