@@ -7,6 +7,7 @@ const DAYS={
   desc:'Jornada de hacking en equipos. Juntá a tus amigos y vení a divertirte aprendiendo de ciberseguridad.',
   venue:'Campus Universitario UNICEN',short:'UNICEN · Campus',addr:'Paraje Arroyo Seco s/n, B7000 Tandil, Buenos Aires, Argentina',
   maps:'https://www.google.com/maps/search/?api=1&query=UNICEN%20-%20Campus%20Universitario&query_place_id=ChIJXTwhmjjgkJURMlmVPKCu-c8',
+  signup:'https://luma.com/8dy1oypg?lm_source=embed',
   other:'startup',otherLabel:'Startup Day · 15 Octubre',
   vis:'term'},
  startup:{key:'startup',slug:'startup-day',date:'15',track:'Track 02 · Startups',name:'Startup Day',color:'#FF6F59',bg:'coral',

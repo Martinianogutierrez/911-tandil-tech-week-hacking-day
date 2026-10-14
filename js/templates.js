@@ -55,7 +55,7 @@ function dayView(d){
    <h1 class="dh-title" aria-label="${d.name}">${words(d.name)}</h1>
    <div class="dh-row">
     <div><p class="lead">${d.desc}</p>
-     <div class="btns"><a class="btn white mag" href="#${DAYS[d.other].slug}" data-go="${d.other}">${d.otherLabel} ${arrow}</a></div></div>
+     <div class="btns">${d.signup?`<a class="btn mag" href="${d.signup}" target="_blank" rel="noopener">Inscribirme ${arrow}</a>`:''}<a class="btn white mag" href="#${DAYS[d.other].slug}" data-go="${d.other}">${d.otherLabel} ${arrow}</a></div></div>
     <div class="dh-vis rv">${visOf(d)}</div>
    </div>
   </div></section>
